@@ -1,0 +1,44 @@
+//====================================================================================================
+.footer {
+	
+	// .footer__container
+	&__container {
+		display: flex;
+		align-items: center;
+		border-top:  1px solid #3f3b3d73;
+		@include adaptiveValue("padding-top",30 ,10 );
+		@include adaptiveValue("padding-bottom",30 ,10 );
+		font-family: 'Lobster', cursive;
+	}
+	// .footer__logo
+	&__logo {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+		
+		.logo {
+			width: 40px;
+			@media (max-width: em(462)){
+				  display: none;
+			}
+		}
+		span {
+			padding-right: 10px;
+			@include adaptiveValue("font-size", 26,18,878,680,1 );
+			@media (max-width:$mobile){
+				padding-right: 10px; 
+		  	}
+		}
+	}
+
+}
+.footer__counry {
+	flex: 1 1 auto;
+	padding-right: 10px;
+	p {
+		@include adaptiveValue("font-size", 20,16,878,680,1 );
+	}
+}
+
+
+//====================================================================================================

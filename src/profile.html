@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Реєстрація"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main>
+			<section class="profile">
+				<div class="profile__container">
+					<h2 class="profile__title title">Особовий кабінет</h2>
+					<form action="" class="profile__form form">
+						<div class="form__top">
+							<div class="form__login"><span>Віталій</span> vpolushkov@gmail.com</div>
+							<div class="form__adress"><span>Квартира:</span> 36</div>
+						</div>
+						<div class="form__body">
+							<div class="form__line">
+								<div class="form__wrapper">
+									<label for="indications">Показники води (тільки цифри)</label>
+									<input id="indications" required type="text" pattern="^[0-9]+$" class="form__input"
+										placeholder="Введіть показники лічильника на воду">
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="form__wrapper">
+									<button class="form__btn btn">Передати показники</button>
+								</div>
+							</div>
+							<div class="form__line">
+							</div>
+						</div>
+					</form>
+
+					<div class="indications">
+						<h2 class="indications__title title">
+							Історія показників
+						</h2>
+						<div class="indications__body body-indications">
+							<div class="body-indications__item item-body-indications">
+								<div class="item-body-indications__line line-item-body-indications">
+									<div class="line-item-body-indications__item">
+										Дата показників
+									</div>
+									<div class="line-item-body-indications__line"></div>
+									<div class="line-item-body-indications__item">
+										12.03.1999 12:00
+									</div>
+								</div>
+								<div class="item-body-indications__line line-item-body-indications">
+									<div class="line-item-body-indications__item">Показники: </div>
+									<div class="line-item-body-indications__line"></div>
+									<div class="line-item-body-indications__item">1234</div>
+								</div>
+								<div class="item-body-indications__line line-item-body-indications">
+									<div class="line-item-body-indications__item">Заборгованість: </div>
+									/
+									<div class="line-item-body-indications__item">Баланс: </div>
+								</div>
+								<div class="item-body-indications__line line-item-body-indications">
+									<div class="line-item-body-indications__item">Баланс</div>
+								</div>
+							</div>
+							<div class="body-indications__item item-body-indications">
+								<div class="item-body-indications__line line-item-body-indications">
+									<div class="line-item-body-indications__item">
+										Дата показників
+									</div>
+									<div class="line-item-body-indications__line"></div>
+									<div class="line-item-body-indications__item">
+										12.03.1999 12:00
+									</div>
+								</div>
+								<div class="item-body-indications__line line-item-body-indications">
+									<div class="line-item-body-indications__item">Показники: </div>
+									<div class="line-item-body-indications__line"></div>
+									<div class="line-item-body-indications__item">1234</div>
+								</div>
+								<div class="item-body-indications__line line-item-body-indications">
+									<div class="line-item-body-indications__item">Заборгованість: </div>
+									/
+									<div class="line-item-body-indications__item">Баланс: </div>
+								</div>
+								<div class="item-body-indications__line line-item-body-indications">
+									<div class="line-item-body-indications__item">Баланс</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

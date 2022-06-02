@@ -1,0 +1,26 @@
+.log-in {
+	// .log-in__container
+	&__container {
+		@include adaptiveValue("padding-top", 60, 20);
+		@include adaptiveValue("padding-bottom", 80, 40);
+		@media (max-width: em(634)){
+			padding-top: 10px;
+		}
+	}
+	// .log-in__btn-back
+	&__btn-back {
+		
+	}
+	// .log-in__form
+	&__form {
+	}
+}
+
+
+.form__input_checkbox:checked+label::before {
+	opacity: 1;
+}
+.form__input_checkbox:focus+label::after {
+	box-shadow: 0 0 15px #F14814;
+	transform: scale(120%);
+}

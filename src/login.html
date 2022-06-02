@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Сторінка входу"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main>
+			<section class="log-in">
+				<div class="log-in__container">
+					<h2 class="log-in__title title">Вхід</h2>
+					<form action="" class="log-in__form form">
+						<div class="form__body">
+							<div class="form__line">
+								<div class="form__wrapper">
+									<label for="email">E-mail</label>
+									<input id="email" type="email" required class="form__input" placeholder="Введіть E-mail">
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="form__wrapper">
+									<label for="password">Пароль</label>
+									<input id="password" required type="password" class="form__input"
+										placeholder="Введіть пароль">
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="form__wrapper form__wrapper_checkbox">
+									<input id="checkbox" type="checkbox" class="form__input_checkbox">
+									<label class="checkbox-label" for="checkbox">Запам'ятати мене</label>
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="form__wrapper">
+									<button class="form__btn btn">Увійти</button>
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="form__link">
+									Зареєструватися
+								</div>
+								<div class="form__link">
+									Забули пароль?
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
